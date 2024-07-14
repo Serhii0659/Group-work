@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-list__link');
     const navIndicator = document.querySelector('.nav-indicator');
 
-    // Функціонал для прокрутки меню
     if (leftButton && rightButton && menuList) {
         leftButton.addEventListener('click', () => {
             menuList.scrollBy({ left: -300, behavior: 'smooth' });
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Функціонал для підсвічування навігаційних пунктів
     if (navLinks && navIndicator) {
         navLinks.forEach(link => {
             link.addEventListener('mouseenter', (e) => {

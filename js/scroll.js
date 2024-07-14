@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
             menuList.scrollBy({ left: 300, behavior: 'smooth' });
         });
 
-        // Додатково: Прокрутка при натисканні стрілок на клавіатурі
         document.addEventListener('keydown', (event) => {
             if (event.key === 'ArrowLeft') {
                 menuList.scrollBy({ left: -300, behavior: 'smooth' });

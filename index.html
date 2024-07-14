@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MealMagic</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon"> <!-- Встановити icon.ico за іконку сайта -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <!-- Встановити icon.ico за іконку сайта (для старих браузерів) -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -44,36 +42,56 @@
                Замовляйте у нас і насолоджуйтесь відмінною їжею без зайвих турбот!</p>
         </div>
     </section>
+
     <section class="search">
         <div class="container">
             <input type="text" id="search-input" placeholder="Пошук страв...">
             <button id="search-button">Пошук</button>
         </div>
     </section>
-    <section class="menu-dishes">
+
+    <section class="menu">
         <div class="container">
             <h2>Рекомендації від нас</h2>
-            <div class="menu-list">
-                <div class="menu-item">
-                    <img src="https://img.postershop.me/10126/8e41940e-d0cf-4c1b-a211-95b6f86ddc65_image.jpeg" alt="Dish 1">
-                    <h3>Гавайська піца</h3>
-                    <p>
-                        Різновид піци, який зазвичай готують з томатним соусом, сиром моцарелла, 
-                        тертою шинкою, консервованими ананасами та шматочками солодкого перцю. </p>
+            <div class="menu-wrapper">
+                <button class="scroll-button left-button">&lt;</button>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="https://img.postershop.me/10126/8e41940e-d0cf-4c1b-a211-95b6f86ddc65_image.jpeg" alt="Dish 1">
+                        <h3>Гавайська піца</h3>
+                        <p>
+                            Різновид піци, який зазвичай готують з томатним соусом, сиром моцарелла, 
+                            тертою шинкою, консервованими ананасами та шматочками солодкого перцю.
+                        </p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://nerosushi.com.ua/wp-content/uploads/nero00010.png" alt="Dish 2">
+                        <h3>Рамен з яйцями та креветками</h3>
+                        <p>Рамен з яйцями та креветками – це ароматний суп з локшиною, овочами, креветками та яйцями.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM2_uDkOoGR2oKGYRveZlx2EPXwLvFih6DS832-mcOhisix3lKh6fLUM5GUUP8T02mUQ4&usqp=CAU" alt="Dish 3">
+                        <h3>Український борщ</h3>
+                        <p>Ситний і ароматний український суп, відомий своїм насиченим червоним кольором і багатим смаком.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://www.kyiv.samudoma.com.ua/wp-content/uploads/2023/04/Lazania.webp" alt="Dish 4">
+                        <h3>Лазанья "Болоньєзе"</h3>
+                        <p>Ситний і ароматний український суп, відомий своїм насиченим червоним кольором і багатим смаком.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_N_EjG0CcwDfBkNlC5Cr8RomNget45XFwu1tN6RscdPT_CBwcBxoFztGxQ4Ay077EezA&usqp=CAU" alt="Dish 5">
+                        <h3>Торт "Наполеон"</h3>
+                        <p>Класичний десерт з хрустких листкових коржів, просочених ніжним заварним кремом.</p>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <img src="https://nerosushi.com.ua/wp-content/uploads/nero00010.png" alt="Dish 2">
-                    <h3>Рамен з яйцями та креветками</h3>
-                    <p>Рамен з яйцями та креветками – це ароматний суп з локшиною, овочами, креветками та яйцями.</p>
-                </div>
-                <div class="menu-item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM2_uDkOoGR2oKGYRveZlx2EPXwLvFih6DS832-mcOhisix3lKh6fLUM5GUUP8T02mUQ4&usqp=CAU" alt="Dish 3">
-                    <h3>Український борщ</h3>
-                    <p>Ситний і ароматний український суп, відомий своїм насиченим червоним кольором і багатим смаком.</p>
-                </div>
+                <button class="scroll-button right-button">&gt;</button>
             </div>
         </div>
     </section>
+
+    <script src="./js/scroll.js"></script>
+    <script src="./js/illumination.js"></script>
 </body>
 
 </html>

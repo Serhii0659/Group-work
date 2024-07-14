@@ -1,0 +1,32 @@
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.nav-indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--accent);
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.nav-list__link {
+    color: var(--header-text);
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-list__link:hover {
+    color: var(--accent);
+}
+
+.nav-list__link--active {
+    color: var(--accent);
+}

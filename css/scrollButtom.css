@@ -1,0 +1,48 @@
+.scroll-button {
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-button:hover {
+    background-color: var(--white);
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 10px;
+}
+
+.menu-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 0 50px; /* Отступы для кнопок */
+    flex: 1;
+}
+
+.menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-item {
+    min-width: 300px;
+    margin-right: 20px;
+}
+

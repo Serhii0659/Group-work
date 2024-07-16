@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealMagic - Кошик</title>
+    <link rel="stylesheet" href="./css/basket.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>Meal</strong>Magic</a>
+
+                <button class="dark-mode-button">
+                    <img src="/img/icons/sun.svg" alt="Light mode" class="dark-mode-button__icon">
+                    <img src="/img/icons/moon.svg" alt="Dark mode" class="dark-mode-button__icon">
+                </button>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Головна</a></li>
+                    <li class="nav-list__item"><a href="./basket.html" class="nav-list__link nav-list__link--active">Кошик</a></li>
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Контакти</a></li>
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Про нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header"> 
+        <div class="container">
+            <h1 class="header__title">Ваш кошик</h1>
+        </div>
+    </header>
+
+    <section class="basket">
+        <div class="container">
+            <h2>Товари у вашому кошику</h2>
+            <div class="basket-items">
+                <div class="basket-item">
+                    <img src="https://img.postershop.me/10126/8e41940e-d0cf-4c1b-a211-95b6f86ddc65_image.jpeg" alt="Гавайська піца">
+                    <div class="basket-item-details">
+                        <h3>Гавайська піца</h3>
+                        <p class="item-price">Ціна: 150 грн</p>
+                        <div class="quantity-control">
+                            <button class="quantity-minus">-</button>
+                            <input type="number" class="quantity" value="1">
+                            <button class="quantity-plus">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Видалити</button>
+                </div>
+                <div class="basket-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_N_EjG0CcwDfBkNlC5Cr8RomNget45XFwu1tN6RscdPT_CBwcBxoFztGxQ4Ay077EezA&usqp=CAU" alt="Торт Наполеон">
+                    <div class="basket-item-details">
+                        <h3>Торт "Наполеон"</h3>
+                        <p class="item-price">Ціна: 30 грн</p>
+                        <div class="quantity-control">
+                            <button class="quantity-minus">-</button>
+                            <input type="number" class="quantity" value="1">
+                            <button class="quantity-plus">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Видалити</button>
+                </div>
+                <div class="basket-item-details">
+            </div>
+            <div class="basket-summary">
+                <h3>Загальна сума: <span id="total-price">180 грн</span></h3>
+                <button class="checkout-button">Оформити замовлення</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/basketButtom.js"></script>
+    <script src="./js/illumination.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

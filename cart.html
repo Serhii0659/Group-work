@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealMagic - Кошик</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>Meal</strong>Magic</a>
+
+                <button class="dark-mode-button">
+                    <img src="/img/icons/sun.svg" alt="Light mode" class="dark-mode-button__icon">
+                    <img src="/img/icons/moon.svg" alt="Dark mode" class="dark-mode-button__icon">
+                </button>
+
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Головна</a></li>
+                    <li class="nav-list__item"><a href="./#" class="nav-list__link nav-list__link--active">Кошик</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Контакти</a></li>
+                    <li class="nav-list__item"><a href="./about us.html" class="nav-list__link">Про нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="cart-header"> 
+        <div class="container">
+            <h1 class="header__title">Ваш кошик</h1>
+        </div>
+    </header>
+
+    <section class="cart">
+        <div class="container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="./img/dishes/Hawaiian Pizza.png" alt="Гавайська піца">
+                    <div class="cart-item-details">
+                        <h3>Гавайська піца</h3>
+                        <p class="item-price">Ціна: 150 грн</p>
+                        <div class="quantity-control">
+                            <button class="quantity-minus">-</button>
+                            <input type="number" class="quantity" value="1">
+                            <button class="quantity-plus">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Видалити</button>
+                </div>
+                <div class="cart-item">
+                    <img src="./img/dishes/Napoleon slice.png" alt="Торт Наполеон">
+                    <div class="cart-item-details">
+                        <h3>Торт "Наполеон"</h3>
+                        <p class="item-price">Ціна: 30 грн (за 100г)</p>
+                        <div class="quantity-control">
+                            <button class="quantity-minus">-</button>
+                            <input type="number" class="quantity" value="1">
+                            <button class="quantity-plus">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item">Видалити</button>
+                </div>
+                <div class="cart-item-details">
+            </div>
+            <div class="cart-summary">
+                <h3>Загальна сума: <span id="total-price">180 грн</span></h3>
+                <a href="./order-page.html"><button class="checkout-button">Оформити замовлення</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://github.com/Serhii0659/Group-work"><img
+                                src="/img/icons/gitHub.svg" alt="Link"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2024 Dish-team IPZ-23006</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/cartButton.js"></script>
+    <script src="./js/illumination.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

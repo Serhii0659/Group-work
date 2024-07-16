@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const basketItems = document.querySelectorAll('.basket-item'); 
+    const cartItems = document.querySelectorAll('.cart-item'); 
     const totalPriceElement = document.getElementById('total-price'); 
     let totalPrice = 0; 
 
-    basketItems.forEach(item => {
+    cartItems.forEach(item => {
         const priceElement = item.querySelector('.item-price'); 
         const priceText = priceElement.textContent.replace('Ціна: ', '').replace(' грн', '').replace(' / 100 гр', ''); 
         const basePrice = parseFloat(priceText); 

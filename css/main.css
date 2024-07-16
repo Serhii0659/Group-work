@@ -334,6 +334,18 @@ html, body {
     color: var(--text-color);
     text-align: center;
 }
+/* Social link in Contacts page */
+
+.social-link {
+    color: var(--text-color);
+    transition: opacity 0.2s ease-in;
+}
+
+.social-link:hover {
+    color: var(--accent);
+    opacity: 0.8;
+}
+
 /* Footer */
 
 .footer {

@@ -23,6 +23,3 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('One or more elements not found for scrolling functionality.');
     }
 });
-
-
-
